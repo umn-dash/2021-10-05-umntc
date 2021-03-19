@@ -9,6 +9,7 @@
 {% include install_instructions/editor.html %}
 {% endcomment %}
 
+{% comment %}
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
 {% elsif site.flavor == "python" %}
@@ -19,6 +20,7 @@
 {% else %}
 {% include warning-flavor.html %}
 {% endif %}
+{% endcomment %}
 
 {% include install_instructions/sql.html %}
 
